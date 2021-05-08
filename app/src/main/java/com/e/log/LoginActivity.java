@@ -20,7 +20,7 @@ import com.google.android.material.snackbar.Snackbar;
 
 public class LoginActivity extends AppCompatActivity {
 
-    //Decided to use a Fragment for my list activity
+    //Decided to use a Fragments for my list activity
     FrameLayout jew;
     EditText user, pass;
     TextView TV;
@@ -28,7 +28,8 @@ public class LoginActivity extends AppCompatActivity {
     FragmentManager fragm ;
     ProgressBar prog;
     int progressStatus = 0;
-    Handler uzumaki = new Handler();
+    //had isues working ut my progress bar since its my first time using it
+
 
 
     @Override
@@ -48,7 +49,7 @@ public class LoginActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 if((!user.getText().toString().isEmpty() && !pass.getText().toString().isEmpty()) && !user.getText().toString().equals("BigMike")){
-                   
+
 
                     if (progressStatus <3000){
                         progressStatus++;
