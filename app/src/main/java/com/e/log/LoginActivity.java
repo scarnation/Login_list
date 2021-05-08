@@ -48,8 +48,7 @@ public class LoginActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 if((!user.getText().toString().isEmpty() && !pass.getText().toString().isEmpty()) && !user.getText().toString().equals("BigMike")){
-                    //Intent oscar = new Intent(LoginActivity.this, ItemFragment.class);
-                    //LoginActivity.this.startActivity(oscar);
+                   
 
                     if (progressStatus <3000){
                         progressStatus++;
