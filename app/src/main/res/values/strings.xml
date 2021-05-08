@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Log</string>
+    <string name="email">UserName</string>
+    <string name="pass">Password</string>
+    <string name="log">Login Now</string>
+    <string name="no">         BigMike is not welcomed. </string>
+    <string name="error"> Please enter a valid Username/Password </string>
+    <string name="banned"> BigMike is banned </string>
+</resources>
