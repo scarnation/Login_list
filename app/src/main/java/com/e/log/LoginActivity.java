@@ -16,6 +16,8 @@ import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.google.android.material.snackbar.Snackbar;
+
+import java.time.zone.ZoneOffsetTransitionRule;
 //import androidx.fragment.app.Fragment;
 
 public class LoginActivity extends AppCompatActivity {
@@ -51,7 +53,7 @@ public class LoginActivity extends AppCompatActivity {
                 if((!user.getText().toString().isEmpty() && !pass.getText().toString().isEmpty()) && !user.getText().toString().equals("BigMike")){
 
 
-                    if (progressStatus <3000){
+                    if (progressStatus <4000){
                         progressStatus++;
                         prog.setVisibility(v.VISIBLE);
 
@@ -69,6 +71,7 @@ public class LoginActivity extends AppCompatActivity {
                    tran.commit();
 
                     overridePendingTransition(R.anim.slide_right, R.anim.slide_right);
+
                 }
                 else if(user.getText().toString().equals("BigMike")){
 
